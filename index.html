@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="source/animate.css">
         <link rel="stylesheet" href="source/habilidades.css">
 <!--         <link rel="stylesheet" href="css/loading.css">
- -->        
+ -->    <link rel="stylesheet" type="text/css" href="css/mano.css">    
         <link rel="stylesheet" type="text/css" href="css/utilidades.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -15,11 +15,36 @@
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     </head>
     <body id="bod">
-    <!-- Preloader -->
-        <!-- <div id="conte">
-            <canvas id="drawing_canvas" class="col-xs-12"></canvas>
-        </div> -->
-    <!-- Termmina preloader -->
+    <i class="fa fa-chevron-up ir-arriba" aria-hidden="true"></i>
+
+        <div id="conte">
+            <div class="cssload-loading mano">
+                <div class="cssload-finger cssload-finger-1">
+                    <div class="cssload-finger-item">
+                        <span></span><i></i>
+                    </div>
+                </div>
+                <div class="cssload-finger cssload-finger-2">
+                    <div class="cssload-finger-item">
+                        <span></span><i></i>
+                    </div>
+                </div>
+                <div class="cssload-finger cssload-finger-3">
+                    <div class="cssload-finger-item">
+                        <span></span><i></i>
+                    </div>
+                </div>
+                <div class="cssload-finger cssload-finger-4">
+                    <div class="cssload-finger-item">
+                        <span></span><i></i>
+                    </div>
+                </div>
+                <div class="cssload-last-finger">
+                    <div class="cssload-last-finger-item"><i></i></div>
+                </div>
+            </div>
+        </div> 
+    
         <nav class="navbar" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -34,10 +59,10 @@
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Sobre mi</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">Contactame!</a></li>
+                    <li><a href="#sobremi">Sobre mi</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contactame">Contactame!</a></li>
                 </ul>
             </div>
         </nav>
@@ -60,6 +85,7 @@
             </div>
             <!-- Termina foto mac -->
             <!-- inician los skills -->
+            <a name="skills"></a>
             <div class="row" id="skill">
             <div class="col-xs-12">
                 <section id="habilidades" class="habilidades">
@@ -123,13 +149,14 @@
             </section>
             </div>
         </div>
+        <a name="proyectos"></a>
          <!-- termina skills -->
         <div class="row" id="separador">
             <div class="col-xs-12">
-                <h2 class="text-center">
+                <h2 class="text-center scrollflow -pop -opacity">
                     La creatividad es inteligencia divirtiéndose.
                 </h2>
-                <h4 align="right">
+                <h4 align="right" class="scrollflow -slide-top -opacity">
                     -Albert Einstein.
                 </h4>
             </div>
@@ -146,7 +173,7 @@
                         <h4 class="scrollflow -slide-bottom -opacity">
                             "Cinema" muestra una cartelera de cine responsive hecha con bootstrap.
                         </h4>
-                        <a href="#"><button type="button" class="btn-primary center-block scrollflow -slide-top -opacity">Visitar página</button></a>
+                        <a href="#"><button type="button" class="center-block scrollflow -slide-top -opacity">Visitar página</button></a>
                     </div>
                 </div>
                 <div class="row proyecto scrollflow -slide-right -opacity">
@@ -155,7 +182,7 @@
                         <h4 class="scrollflow -slide-bottom -opacity">
                             Este proyecto muestra el catalogo de una tienda de ropa, utiliza algunas animaciones creadas con el framework animate.css, esta creado con la grid responsive de bootstrap.
                         </h4>
-                        <a href="#"><button type="button" class="btn-primary center-block scrollflow -slide-top -opacity">Visitar página</button></a>
+                        <a href="#"><button type="button" class=" center-block scrollflow -slide-top -opacity">Visitar página</button></a>
                     </div>
                     <div class="col-xs-6">
                         <img src="img/Proyectos/Accessories.png" class="img-responsive liquid-zoom4"  id="Accessories">
@@ -170,11 +197,12 @@
                         <h4 class="scrollflow -slide-bottom -opacity">
                             El proyecto "Flores" muestra la pagina web de una empresa de perfumeria, la grid que se ocupo en esta landing tambien fue la da bootstrap.
                         </h4>
-                        <a href="#"><button type="button" class="btn-primary center-block scrollflow -slide-top -opacity">Visitar página</button></a>
+                        <a href="#"><button type="button" class="center-block scrollflow -slide-top -opacity">Visitar página</button></a>
                     </div>
                 </div>    
             </div>
         </div>
+        <a name="contactame"></a>
         <div class="row" id="negro">
                 <div class="col-xs-6 text-center">
                     <h2>¿Te gusto mi trabajo? <br> ¡Contactame!</h2>
@@ -217,9 +245,11 @@
 
     </div><!-- container -->
     <script src="js/loading.js" ></script>
+    <script type="text/javascript" src="js/irarriba.js"></script>
     <script src="js/cerrarpreloading.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/eskju.jquery.scrollflow.min.js" ></script>
+    <script type="text/javascript" src="js/arriba.js"></script>
     <script src="jquery.skills.js"></script>
     <script>
         $(document).ready(function() {

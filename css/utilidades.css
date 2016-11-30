@@ -1,6 +1,7 @@
 body{
 	background-color: #F5ECEC;
 	transition: .5s;
+	overflow-x: hidden;
 }
 #mac{
 	background-image: url("../img/mac.jpg");
@@ -55,18 +56,22 @@ body{
 	background-image: url("../img/brickwall.png");
 }
 #habilidades h2, #proy h2 {
-	margin-top: 8%;
+	margin-top: 5%;
 	font-size: 5em;
 }
 #separador{
-	background-image: url("../img/gafas.jpg");
+	background-image: url("../img/crea.gif");
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: contain;
 	height: 22em; 
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #2BD0C9;
+	min-width: 100%;
 	color: white;
 }
 #separador > .col-xs-12{
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.3);
 	min-height: 100%;
 }
 #separador h2{
@@ -100,6 +105,10 @@ button{
 	border-radius: 25px;
 	border: none;
 	padding: .5em 1.5em;
+	background-color: #024959;
+}
+a > button{
+	color: white;
 }
 #proy{
 	background-image: url("../img/ign.png");
@@ -128,8 +137,35 @@ button{
 #negro>h4{
 	margin-top: 2em;
 }
-/*#post{
-	background-image: url("../img/img_7.png");
-	background-repeat: no-repeat;
-	height: 20em;
-}*/
+.ir-arriba{
+	display: inline-block;
+	padding: 20px;
+	background: #024959;
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 20px;
+	z-index: 100;
+}
+#conte{
+    width: 101%;
+    margin-left: -1%;
+    min-height: 100%;
+    overflow: hidden;
+    position: fixed;
+
+}
+#bod,#conte{
+   background-color:  white;
+   z-index: 99999;
+}
+.cerrar{
+    transform: translateY(-110%);
+    transition: all 0.5s;
+}
+.mano{
+	margin: 25% auto;
+}
