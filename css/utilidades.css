@@ -2,9 +2,10 @@ body{
 	background-color: #F5ECEC;
 	transition: .5s;
 	overflow-x: hidden;
+	font-family: 'Raleway', sans-serif !important;
 }
 #mac{
-	background-image: url("../img/mac.jpg");
+	background-image: url("../img/mac2.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -40,7 +41,8 @@ body{
 }
 .navbar{
     margin-bottom: 0px !important;
-    background-color: #000000 !important;
+    background-color: #2BD0C9 !important;
+    z-index: 1000;
 }
 .navbar a, .navbar p{
 	color: white;
@@ -56,6 +58,12 @@ body{
 }
 .navbar-header p{
 	font-size: 2em;
+}
+button span{
+	color: white;
+}
+.blue{
+	background-color: #2BD0C9;
 }
 #skill{
 	background-image: url("../img/brickwall.png");
@@ -76,12 +84,12 @@ body{
 	color: white;
 }
 #separador > .col-xs-12{
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.2);
 	min-height: 100%;
 }
 #separador h2{
 	padding-top: 8%;
-	font-size: 3.5em;
+	font-size: 4.5em;
 }
 #separador h4{
 	font-size: 2.5em;
@@ -91,18 +99,17 @@ body{
 	height: 30em;
 	width: 30em;
 	margin: 5em auto;
-	transition: all 2s;
+	transition: all 1s;
 	filter: grayscale(75%);
 
 }
 #cinema:hover, #Accessories:hover, #Flores:hover{
 	border-radius: 0%;
 	width: 55em;
-	transition: all 2s;
+	transition: all 1s;
 	filter: grayscale(0%);
 }
 .proyecto h4{
-	margin-top: 10%;
 	font-size: 2em;
 	padding: 1em;
 }
@@ -110,7 +117,7 @@ button{
 	border-radius: 25px;
 	border: none;
 	padding: .5em 1.5em;
-	background-color: #024959;
+	background-color: #2BD0C9;
 }
 a > button{
 	color: white;
@@ -120,8 +127,11 @@ a > button{
 	padding: 1em;	
 
 }
+.titulos{
+	font-family: 'Kalam', cursive;
+}
 .footer{
-	background-color: #000000;
+	background-color: #2BD0C9;
 	height: 5em;
 	color: #ffffff;
 	padding:2em;
@@ -130,9 +140,14 @@ a > button{
 	height: 30em;
 	border-radius: 50%;
 }
+.yarts{
+	font-family: 'Kalam', cursive;
+	font-size: 1.5em;
+}
 #negro{
 	background-image: url("../img/esche.png");
 	color: white;
+	padding: 4em;
 }
 #negro h4 > a{
 	text-decoration: none;
@@ -141,6 +156,13 @@ a > button{
 }
 #negro>h4{
 	margin-top: 2em;
+}
+#negro>h2{
+	font-size: 2.5em;
+}
+#negro h2>span{
+	font-size: 2.5em;
+	font-family: 'Kalam', cursive;
 }
 .ir-arriba{
 	display: inline-block;
@@ -173,4 +195,10 @@ a > button{
 }
 .mano{
 	margin: 25% auto;
+}
+.pdt{
+	padding-top: 7.5%;
+}
+.sm-pdt{
+	padding-top: 1.5em;
 }

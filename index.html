@@ -7,13 +7,14 @@
         <link rel="shortcut icon" type="image/x-icon" href="img/triquetrab.png">
         <link rel="stylesheet" href="source/animate.css">
         <link rel="stylesheet" href="source/habilidades.css">
-<!--         <link rel="stylesheet" href="css/loading.css">
- -->    <link rel="stylesheet" type="text/css" href="css/mano.css">    
+        <link rel="stylesheet" type="text/css" href="css/mano.css">    
         <link rel="stylesheet" type="text/css" href="css/utilidades.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Kalam:300,400,700|Raleway:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
     </head>
     <body id="bod">
     <i class="fa fa-chevron-up ir-arriba" aria-hidden="true"></i>
@@ -46,7 +47,7 @@
             </div>
         </div> 
     
-        <nav class="navbar" role="navigation">
+        <nav class="navbar navbar-default" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse"
             data-target=".navbar-ex1-collapse">
@@ -56,9 +57,9 @@
                     <span class="icon-bar"></span>
                 </button>
                 <img src="img/triquetra.png" alt="Triquetra" id="triquetra">
-                <p>Yare!</p>
+                <p class="yarts">Yare!</p>
             </div>
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <div class="collapse navbar-collapse blue navbar-ex1-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#sobremi">Sobre mi</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -70,7 +71,7 @@
         <div class="container-fluid">
             <div class="row" id="mac">
                 <div class="col-xs-12 text-center">
-                    <h1>Mi nombre es Yare...</h1>
+                    <h1>Mi nombre es <span class="yarts">Yare</span> ...</h1>
 
                     <h3>
                         Divertida, ocurrente y apasionada... 
@@ -154,61 +155,68 @@
          <!-- termina skills -->
         <div class="row" id="separador">
             <div class="col-xs-12">
-                <h2 class="text-center scrollflow -pop -opacity">
+                <h2 class="text-center scrollflow -pop -opacity titulos">
                     La creatividad es inteligencia divirtiéndose.
                 </h2>
-                <h4 align="right" class="scrollflow -slide-top -opacity">
+                <h4 class="scrollflow -slide-top -opacity text-center">
                     -Albert Einstein.
                 </h4>
             </div>
         </div>
         <div class="row" id="proy">
             <div class="col-xs-12">
-                <h2>Mis proyectos</h2>
+                <h2 class="scrollflow -pop -opacity">Mis proyectos</h2>
                 <div class="row proyecto scrollflow -slide-left -opacity">
-                    <div class="col-xs-6">
+                    <div class="col-xs-12 col-md-6">
                         <img src="img/Proyectos/Cinema.png" class="img-responsive" id="cinema">
                     </div>
-                    <div class="col-xs-6 text-center">
-                        <h2>Cinema</h2>
+                    <div class="col-xs-12 col-md-6 text-center pdt">
+                        <h2 class="mg titulos">Cinema</h2>
                         <h4 class="scrollflow -slide-bottom -opacity">
                             "Cinema" muestra una cartelera de cine responsive hecha con bootstrap.
                         </h4>
-                        <a href="#"><button type="button" class="center-block scrollflow -slide-top -opacity">Visitar página</button></a>
+                        <a href="https://yarearista.github.io/cinema/" target="_blank"><button type="button" class="center-block">Visitar página</button></a>
                     </div>
                 </div>
                 <div class="row proyecto scrollflow -slide-right -opacity">
-                    <div class="col-xs-6 text-center">
-                        <h2>Accessories</h2>                        
+                    <div class="col-xs-12 col-sm-12 hidden-md hidden-lg">
+                        <img src="img/Proyectos/Accessories.png" class="img-responsive liquid-zoom4"  id="Accessories">
+                    </div>
+                    <div class="col-xs-12 col-md-6 text-center pdt">
+                        <h2 class="titulos">Accessories</h2>                        
                         <h4 class="scrollflow -slide-bottom -opacity">
                             Este proyecto muestra el catalogo de una tienda de ropa, utiliza algunas animaciones creadas con el framework animate.css, esta creado con la grid responsive de bootstrap.
                         </h4>
-                        <a href="#"><button type="button" class=" center-block scrollflow -slide-top -opacity">Visitar página</button></a>
+                        <a href="https://yarearista.github.io/32_Examen-individual-2/" target="_blank"><button type="button" class=" center-block">Visitar página</button></a>
                     </div>
-                    <div class="col-xs-6">
+                    <div class="hidden-xs hidden-sm col-md-6 ">
                         <img src="img/Proyectos/Accessories.png" class="img-responsive liquid-zoom4"  id="Accessories">
                     </div>
                 </div>
                 <div class="row proyecto scrollflow -slide-left -opacity">
-                    <div class="col-xs-6">
+                    <div class="col-xs-12 col-md-6">
                         <img src="img/Proyectos/Flores.png" class="img-responsive liquid-zoom4" id="Flores">
                     </div>
-                    <div class="col-xs-6 text-center">
-                        <h2>Flores</h2>                    
+                    <div class="col-xs-12 col-md-6 text-center pdt">
+                        <h2 class="titulos">Flores</h2>                    
                         <h4 class="scrollflow -slide-bottom -opacity">
                             El proyecto "Flores" muestra la pagina web de una empresa de perfumeria, la grid que se ocupo en esta landing tambien fue la da bootstrap.
                         </h4>
-                        <a href="#"><button type="button" class="center-block scrollflow -slide-top -opacity">Visitar página</button></a>
+                        <a href="https://yarearista.github.io/26_Sprint1-ejercicio1/" target="_blank"><button type="button" class="center-block">Visitar página</button></a>
                     </div>
                 </div>    
             </div>
         </div>
         <a name="contactame"></a>
         <div class="row" id="negro">
-                <div class="col-xs-6 text-center">
-                    <h2>¿Te gusto mi trabajo? <br> ¡Contactame!</h2>
+                <div class="col-xs-12 hidden-md hidden-lg">
+                    <img src="img/Yare/yare1.jpg" class="img-responsive center-block" id="yare">
+                </div>
+
+                <div class="col-xs-12 col-md-6 text-center">
+                    <h2 class="text-center scrollflow -pop -opacity">¿Te gusto mi trabajo? <br> <span>¡Contactame!</span></h2>
                     <div id="post">
-                        <h4>
+                    <h4 class="sm-pdt">
                         <a href="#">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                         yarearista@icloud.com
@@ -234,8 +242,8 @@
                     </h4>
                     </div>
                 </div>
-                <div class="col-xs-6">
-                    <img src="img/Yare/yare1.jpg" class="img-responsive" id="yare">
+                <div class="hidden-xs hidden-sm col-md-6">
+                    <img src="img/Yare/yare1.jpg" class="img-responsive center-block" id="yare">
                 </div>
             </div>
             <div class="row footer">
@@ -245,8 +253,6 @@
             </div>
 
     </div><!-- container -->
-    <script src="js/loading.js" ></script>
-    <script type="text/javascript" src="js/irarriba.js"></script>
     <script src="js/cerrarpreloading.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/eskju.jquery.scrollflow.min.js" ></script>
